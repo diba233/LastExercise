@@ -1,0 +1,606 @@
+@import "./reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500;600;700&display=swap');
+
+
+$primarycolor: red;
+@mixin d-flex ($justifyContent, $alignItems,) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    // * {
+    //     margin: 0;
+    //     padding: 0;
+    // }
+
+// dropdown-menu
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container {
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+
+       .welcome {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 13px;
+        margin-left: 15px;
+
+
+        
+         .icons {
+            display: flex;
+            
+            .login {
+                width: 18px;
+                height: 18px;
+            }
+            p {
+                width: 64px;
+                height: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+        .header {
+         
+          
+
+            .header-content {
+                @media (max-width:1024px) {
+                    display: flex;
+    
+                    li {
+                        display: none;
+                    }
+    
+                    .nav-right {
+                        display: none;
+                    }
+    
+                    select {
+                        display: none;
+                    }
+                    .burger-bar {
+                        display: block;
+                    }
+                }
+                
+
+             @include d-flex(space-between, center );
+             
+                
+                background: rgb(141,135,231);
+background: radial-gradient(circle, rgba(141,135,231,0) 0%, rgba(68,0,255,0.4599089635854342) 100%);
+         
+              
+                height: 100px;
+
+             .nav-left {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+             }
+
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    
+                }
+                .nav {
+                    display: flex;
+                }
+
+                .geolablogo {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 50px;
+                    
+                }
+                .electronic {
+                    font-weight: 700;
+                    background: rgb(2,0,36);
+                    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(224,255,0,0.8072478991596639) 100%);
+                    
+                }
+                 
+                nav {
+                    ul {
+                        display: flex;
+                    
+                        column-gap: 30px;
+                        margin-left: 70px;
+                        font-weight: 700;
+                        :hover{
+                            cursor: pointer;
+                            color: #ffc800;
+                        }
+                        .category {
+                            width: 110px;
+                            background-color: transparent;
+                            color: black;
+                            font-weight: bold;
+                            font-size: 15px;
+       
+                            border: none;
+                           outline: none;
+                           text-shadow: 0px 0px 1px black;
+                            transition: 0.5s ease;
+
+                            .technick {
+                                font-weight: bold;
+                                width: 150px;
+                                height: 40px;
+                                border-bottom: 1px;
+                                color: red;
+                            }
+                        }
+                        
+                        li {
+
+                            color: black;
+                            
+                            }
+                        }
+                    }
+                }
+                .burger-bar {
+                    display: none;
+                }
+            }
+        }
+   
+  .nav-right {
+    .search1 {
+        border-radius: 50px;
+        border: none;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+    }
+    .btn {
+    border-radius: 50px;
+    color: white;
+    border: 1px solid #ffc800;
+    background-color: #ffc800;
+    margin-left: 10px;
+    padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    }
+    
+  }
+
+//   home-page
+
+.home-page {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    .home-left {
+        width: 531px;
+        height: 340px;
+      
+       
+        margin-top: 150px;
+      
+
+        h1{
+            color: rgb(67 0 86);
+            font-weight: bold;
+            margin-left: 23px;
+            margin-top: 20px;
+            font-size: 52px;
+            text-shadow: -1px 1px 1px black;
+            line-height: 1.2;
+            cursor: pointer;
+           
+          
+            
+        .discount {
+            color: yellow;
+        }
+
+        }
+        p {
+            margin-top: 2rem;
+            margin-left: 25px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+
+           
+        }
+        .shop-now {
+            text-align: center;
+            margin-left: 25px;
+            margin-top: 25px;
+            background-color: purple;
+            width: 100px;
+            height: 25px;
+            font-weight: bold;
+            color: white;
+            border: solid 1px purple;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: yellow;
+            }
+           
+        }
+    }
+    .electronic-img {
+        width: 500px;
+        height: 330px;
+        margin-top: 150px;
+    }
+    @media (max-width:1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+
+        .electronic-img {
+            margin-top: 10px;
+        }
+
+    }
+}
+
+
+// home-page end
+
+// product
+
+.secondpage {
+
+   
+.products {
+ 
+
+    h1 {
+        margin-top: 150px;
+        margin-bottom: 20px;
+        font-size: 80px;
+        font-weight: 700;
+        text-align: center;
+        color: #ffc800;
+        text-shadow: 1px 1px 1px black;
+        border-bottom: 2px solid #ffc800;
+
+    }
+
+    .main-card {
+
+        @media (max-width:1024px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        
+        .card {
+        max-width: 216px;
+            min-height: 384px;
+            // background-color: aquamarine;
+            text-align: center;
+
+            .box1 {
+                width: 214px;
+                height: 214px;
+                margin-bottom: 15px;
+            }
+            .tittle {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .specs {
+                font-size: 15px;
+            }
+            .star {
+                width: 145px;
+                height: 70px;
+            }
+            .price {
+
+                display: flex;
+                justify-content: space-between;
+
+                .item-price {
+                    font-weight: 400;
+                    font-size: 20px;
+
+
+                
+                }
+                .shopping-cart {
+                    max-width: 23px;
+                    min-height: 20px;
+
+                }
+            }
+        }
+    }   
+
+    
+}
+}
+.main-card2 {
+    @media (max-width:1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    
+    
+    .card2 {
+    max-width: 216px;
+        min-height: 384px;
+        // background-color: aquamarine;
+        text-align: center;
+
+        .box2 {
+            width: 214px;
+            height: 214px;
+            margin-bottom: 15px;
+        }
+        .tittle2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .specs2 {
+            font-size: 15px;
+        }
+        .star2 {
+            width: 145px;
+            height: 70px;
+        } 
+        .price2 {
+            display: flex;
+            justify-content: space-between;
+
+            .item-price2 {
+                font-weight: 400;
+                font-size: 20px;
+
+
+            
+            }
+            
+            .shopping-cart2 {
+                width: 23px;
+                height: 20px;
+    
+            } 
+        }
+        
+        
+        
+    }
+    
+}  
+} 
+// product  
+
+
+// mesamegverdi
+
+.thirdpage {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+
+    .reklams {
+        display: flex;
+        justify-content: space-between;
+
+          
+
+      
+        .reklams-view {
+            display: flex;
+            justify-content: space-between;
+            max-width: 545px;
+            min-height: 306px;
+            background-color: aquamarine;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-left: 20px;
+
+            .third-text {
+           
+            h2 {
+                font-size: 40px;
+                font-weight: bold;
+                
+
+                
+            }
+            h4 {
+                font-size: 18px;
+                color: black;
+                margin-top: 20px;
+                margin-bottom: 20px;
+             
+                letter-spacing: 3px;
+                border-bottom: 2px solid black;
+                width: 220px;
+            }
+            p{
+                font-size: 15px;
+                color: black;
+                margin-left: 10px;
+                letter-spacing: 3px;
+            }
+            .buttom2 {
+                text-align: center;
+            margin-left: 25px;
+            margin-top: 25px;
+            background-color: purple;
+            width: 100px;
+            height: 25px;
+            font-weight: bold;
+            color: white;
+            border: solid 1px purple;
+            border-radius: 5px;
+            }
+            }
+            .laptop1 {
+               
+                width: 325px;
+                height: 194px;
+           
+            }
+        }
+    }
+
+    .third-down {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: gray;
+
+            .third-content {
+
+                h1{
+                    color: rgb(67 0 86);
+                    font-weight: bold;
+                    margin-left: 23px;
+                    margin-top: 20px;
+                    font-size: 52px;
+                    text-shadow: -1px 1px 1px black;
+                    line-height: 1.2;
+                    cursor: pointer;
+                   
+                  
+                    
+                .discount {
+                    color: yellow;
+                }
+        
+                }
+                p {
+                    margin-top: 2rem;
+                    margin-left: 25px;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+        
+                   
+                }
+                .shop-now {
+                    text-align: center;
+                    margin-left: 25px;
+                    margin-top: 25px;
+                    background-color: purple;
+                    width: 100px;
+                    height: 25px;
+                    font-weight: bold;
+                    color: white;
+                    border: solid 1px purple;
+                    border-radius: 5px;
+        
+                    &:hover {
+                        background-color: yellow;
+                    }
+                   
+                }
+
+
+
+
+        .third-img {
+            width: 584px;
+            height: 400px;
+        }
+    }       
+}
+}
+
+// mesamegverdi
+
+// meotxegverdi
+
+.Aboutpage {
+
+    .about {
+
+
+        .main-about {
+
+            h3 {
+                font-weight: bold;
+                color: #ffc800;
+                text-shadow: 0px 1px 1px black;
+                font-size: 30px;
+                
+            }
+
+            hr {
+                border-bottom: 2px solid black ;
+            }
+
+            p {
+                margin-top: 10px;
+                height: 175px;
+            }
+
+
+        }
+
+    }
+}
+
+// meotxegverdi
+
+
+}
