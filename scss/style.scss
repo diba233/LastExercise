@@ -20,25 +20,7 @@ body {
 
 // dropdown-menu
 
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .container {
+        .container {
         max-width: 1250px;
         width: 100%;
         margin: 0 auto;
@@ -363,8 +345,9 @@ background: radial-gradient(circle, rgba(141,135,231,0) 0%, rgba(68,0,255,0.4599
     }   
 
     
-}
-}
+
+
+
 .main-card2 {
     @media (max-width:1024px) {
         display: flex;
@@ -372,6 +355,7 @@ background: radial-gradient(circle, rgba(141,135,231,0) 0%, rgba(68,0,255,0.4599
         justify-content: center;
         align-items: center;
         background-color: white;
+    }
 
     display: flex;
     justify-content: space-between;
@@ -424,8 +408,11 @@ background: radial-gradient(circle, rgba(141,135,231,0) 0%, rgba(68,0,255,0.4599
         
     }
     
-}  
+
 } 
+}
+}
+
 // product  
 
 
@@ -601,6 +588,7 @@ flex-direction: column;
 }
 
 // meotxegverdi
+
 
 
 }
