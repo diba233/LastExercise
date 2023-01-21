@@ -15,67 +15,59 @@
   </head>
   <body>
     <div class="container">
-      <div class="welcome">
-        <div class="top-navbar">
-          <p>WELCOME TO OUR SHOP</p>
+      
+      <div class="header-main">
+        <div class="welcome">
+          <div class="top-navbar">
+            <p>WELCOME TO OUR SHOP</p>
+          </div>
+  
+          <div class="icons">
+            <img class="login" src="image/register.jpeg" alt="login" />
+            <p>Login</p>
+            <img class="login" src="image/register.jpeg" alt="register" />
+            <p>register</p>
+          </div>
         </div>
-
-        <div class="icons">
-          <img class="login" src="image/register.jpeg" alt="login" />
-          <p>Login</p>
-          <img class="login" src="image/register.jpeg" alt="register" />
-          <p>register</p>
-        </div>
-      </div>
-      <header class="header">
-        <div class="header-content">
-          <div class="nav-left">
-            <div class="logo">
-              <img class="geolablogo" src="image/download.png" alt="logo" />
-              <span class="electronic">E</span>Lectronic<span class="electronic"
-                >Shop</span
-              >
-            </div>
-
-            <div class="nav">
+        <!-- header -->
+        <header class="header">
+          <div class="header-content">
+            <div class="nav-left">
+              <div class="logo">
+                <img class="geolablogo" src="image/geolabremove.png" alt="logo" />
+                <span class="electronic">E</span>
+                <p>Lectronic</p>
+                <span class="electronic">Shop</span>
+              </div>
+  
               <nav>
                 <ul>
                   <a href="index.html"> <li>Home</li></a>
-                  <a href="#secondpage"> <li>Product</li></a>
-
+                  <li>Product</li>
+  
                   <select class="category">
                     <option class="technick" value="Phones">Phones</option>
                     <option class="technick" value="laptop">Laptop</option>
-                    <option class="technick" value="headphone">
-                      Headphone
-                    </option>
+                    <option class="technick" value="headphone">Headphone</option>
                     <option class="technick" value="monitor">Monitor</option>
                   </select>
-
-                  <li>About</li>
+  
+                  <a href="#Aboutpage"> <li>About</li></a>
                   <li>Contact</li>
                 </ul>
               </nav>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars burger-bar"></i>
-              </a>
+              
+            </div>
+  
+            <div class="nav-right">
+             
+              <button class="btn">Search</button>
             </div>
           </div>
-
-          <div class="nav-right">
-            <input
-              class="search1"
-              type="text"
-              type="search"
-              placeholder="search"
-            />
-            <button class="btn">Search</button>
-          </div>
-        </div>
-      </header>
+        </header>
 
       <section class="Aboutpage">
-        <div class="about container">
+        <div class="about container" id="Aboutpage">
           <div class="main-about">
             <div class="top-about">
               <h3>PRODUCT</h3>
