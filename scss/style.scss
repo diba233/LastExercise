@@ -999,7 +999,26 @@ body {
 }
 
 @media (max-width:1024px) {
+
+    .firspage {
+
+        .home-page  {
+            .home-left {
+                    width: 450px;
+                    margin-top: 50px;
+            }
     
+        }
+    }
+
+    .secondpage {
+        .products{ 
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+  
     .third-down {
         flex-direction: column;
         align-items: center;
@@ -1028,11 +1047,28 @@ body {
    .footer-main {
         flex-direction: column;
         row-gap: 10px;
+        text-align: center;
        
     }
     .num4 {
         align-items: center;
     }
+
+
+    .mexutes {
+        .deliver-main {
+
+            .service {
+                h3 {
+                    font-size: 15px;
+                    
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }   
   
 
 }
